@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật thông tin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .update-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Lập trình web</h2>
+    <div>
+        <a href="index.html">Home</a> | <a href="login.html">Đăng nhập</a> | <a href="register.html">Đăng ký</a>
+    </div>
+
+    <div class="container">
+        <h3>Màn hình cập nhật</h3>
+        <form action="update.php" method="POST">
+            <input type="text" name="username" value="xxx" required><br>
+            <input type="password" name="password" value="xxx" required><br>
+            <input type="password" name="confirm_password" value="xxx" required><br>
+            <input type="email" name="email" value="xxx" required><br>
+            <a href="#">Đã có tài khoản</a><br><br>
+            <button type="submit" class="update-btn">Đăng ký</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
+
+</body>
+</html>
